@@ -1,0 +1,17 @@
+.article-type-main
+{
+    padding: 20px;
+    .type-manage-text
+    {
+        text-align: center;
+        position: relative;
+        line-height: 20px;
+        bottom: 10px;
+        .add-type
+        {
+            position: absolute;
+            right: 60px;
+            bottom: -4px;
+        }
+    }
+}

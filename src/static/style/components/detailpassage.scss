@@ -1,0 +1,227 @@
+.detail-passage-container
+{
+    /deep/.vuepress-markdown-body
+    {
+        color: #fff;
+        background: rgb(13,17,23)
+    }
+    .back{
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .square
+        {
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            background-color: rgb(238,103,92);
+            position: absolute;
+            top: 220px;
+            animation-duration: 8s;
+        }
+        .square2
+        {
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+            background-color: rgb(238,103,92);
+            position: absolute;
+            left: 150px;
+            top: 250px;
+            animation-duration: 8s;
+        }
+        #star-six {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid rgb(129,201,149);
+            position: absolute;
+            left: -20px;
+            top: 500px;
+            animation-duration: 15s;
+        }
+        #star-six:after {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid rgb(129,201,149);
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -50px;
+        }
+    }
+    .main
+    {
+        height: 100%;
+        text-align: center;
+        border-left: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        .title
+        {
+            font-size: 30px;
+            font-weight: bold;
+            color:#58a6ff;
+        }
+        .fixed
+        {
+            position: fixed;
+            top: 0;
+            z-index: 9999999;
+        }
+        .article-information
+        {
+            text-align: left;
+            display: flex;
+            .main-page
+            {
+                height: 20px;
+                font-size:10px;
+                padding: 5px;
+                line-height: 20px;
+                text-align: center;
+                cursor: pointer;
+                font-size: 15px;
+                width: 50px;
+                background: rgb(77, 238, 3);
+                color: rgb(0, 0, 0);
+                font-weight: bolder;
+                border-radius:5px  0px  0px  5px;
+                
+            }
+            .main-page:hover
+            {
+                background: rgb(140, 241, 7);
+            }
+            .article-type
+            {
+                height: 20px;
+                font-size:10px;
+                padding: 5px;
+                line-height: 20px;
+                background: rgb(92,92,92);                
+            }
+            .article-id
+            {
+                height: 20px;
+                font-size:10px;
+                padding: 5px;
+                line-height: 20px;
+                background: #2ea043;
+                border-radius:0px  5px  5px  0px;
+            }
+        }
+        /deep/.vuepress-markdown-body
+        {
+            background: rgb(28,28,28);
+        }
+        .content
+        {
+            font-size: 20px;
+        }
+        .operation
+        {
+            i
+            {
+                cursor: pointer;
+                margin-left: 16px;
+            }
+            text-align: right;
+        }
+        .comment-container
+        {
+            position: relative;
+            border-left:6px solid #ccc;
+            .comment-date{
+                position: relative;
+                text-align: right;
+                color: rgb(224, 236, 108);
+                font-size: 15px;
+                margin-bottom: -10px;
+            }
+            .comment-content{
+                text-align: left;
+                font-size: 18px;
+                margin-top: 8px;
+                margin-left: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4; /* 控制显示的行数 */
+                line-height: 2;        /* 对不支持浏览器的 */
+                max-height: 4
+
+            }
+        }
+        .comment-container:hover
+        {
+            border-left:6px solid rgb(5, 233, 55);
+        }
+    }
+    .right-nav
+    {
+        .navigation-achor
+        {
+            overflow-y: auto;
+            max-height: 500px;
+            min-width: 160px;
+            position: fixed;
+            top: 20px;
+            margin-top: 30px;
+            .anchor-title{
+                cursor: pointer;
+            }
+            .anchor-title:active{
+                color: cadetblue;
+            }
+            
+        }
+        .backTop{
+            position: fixed;
+            right: 80px;
+            bottom: 40px;
+            width: 80px;
+            height: 80px;
+        }
+        @keyframes bounceOutUp {
+            from {
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+                animation-timing-function: ease-out;
+            }
+            20% {
+              transform: translate3d(0, -10px, 0) scaleY(0.985);
+            }
+          
+            40%{
+                transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+                rotate3d(0, 1, 0, -190deg);
+                animation-timing-function: ease-out;
+            }
+            45% {
+              opacity: 1;
+              transform: translate3d(0, 20px, 150px) scaleY(0.9)  perspective(400px) rotate3d(0, 1, 0, -170deg);
+              animation-timing-function: ease-in;
+            }
+            80%{
+                transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+                rotate3d(0, 1, 0, 0deg);
+              animation-timing-function: ease-in;
+            }
+            to {
+              opacity: 0;
+              transform: translate3d(0, -2000px, 0) scaleY(3) perspective(400px) scale3d(1, 1, 1) rotate3d(0, 1, 0, 0deg);
+    
+              animation-timing-function: ease-in;
+            }
+          }
+          
+          .bounceOutUp {
+            animation-name: bounceOutUp;
+            animation-duration: 2s;
+          }          
+    }
+}

@@ -1,0 +1,28 @@
+.login-wrapper
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 58%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 60px;
+    text-align: center;
+    @media screen and (min-width: 380px) 
+    {
+        width: 50%;
+    }
+    .input-wrapper{
+        margin-bottom: 30px;
+        .login-text
+        {
+            width: 100%;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    }
+   
+}

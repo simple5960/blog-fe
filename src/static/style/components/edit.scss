@@ -1,0 +1,36 @@
+.edit-header
+{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: rgb(27, 75, 102);
+    margin-right: -8px;
+    position: relative;
+    .back-to-index
+    {
+        display: inline-block;
+        width: 200px;
+        background: #46485f        ;
+        position: absolute;
+        left: 0;
+        text-align: left;
+        cursor: pointer;
+    }
+}
+.left-nav
+{
+    position: absolute;
+    width: 200px;
+    top: 30px;
+    bottom: 0;
+    background: #545c64;
+}
+.edit-area
+{
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 30px;
+    bottom: 0;
+
+}
