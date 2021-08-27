@@ -32,7 +32,7 @@
 import {defineComponent,onMounted,ref} from 'vue'
 import axios from 'axios'
 import { useRouter} from 'vue-router'
-const baseURL='http://127.0.0.1:7001';
+import baseURL from '../utils/baseURL'
 import { ElMessageBox } from 'element-plus';
 export default defineComponent({
     name:"login",

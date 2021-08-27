@@ -71,7 +71,7 @@ import {useRoute,useRouter} from 'vue-router'
 import axios from 'axios'
 import {incLikeCount} from '../utils/useRequest'
 import { ElMessageBox } from 'element-plus';
-const baseURL="http://127.0.0.1:7001"
+import baseURL from '../utils/baseURL'
 export default defineComponent({
     name:"detailPassage",
     setup()

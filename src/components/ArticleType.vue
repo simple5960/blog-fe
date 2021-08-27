@@ -51,7 +51,7 @@ import { defineComponent,onMounted,onUpdated,ref} from 'vue'
 import axios from 'axios'
 import { ElMessageBox } from 'element-plus';
 import router from '@/router';
-const baseURL='http://127.0.0.1:7001'
+import baseURL from '../utils/baseURL'
 export default defineComponent({
   name:"ArticleType",
   setup()

@@ -45,7 +45,7 @@ import {defineComponent,onMounted,ref} from 'vue'
 import axios from 'axios'
 import {useRouter} from 'vue-router'
 import { ElMessageBox } from 'element-plus';
-const baseURL='http://127.0.0.1:7001'
+import baseURL from '../utils/baseURL'
 export default defineComponent({
   name:"ArticleManage",
   setup() {

@@ -60,7 +60,7 @@ import {defineComponent,ref,onMounted, watch} from 'vue'
 import {useRouter,useRoute} from 'vue-router'
 import {getArticleListByPage,getArticleListByTypeIdAndPage,loadMoreList} from '../utils/useRequest'
 import axios from 'axios'
-const baseURL='http://127.0.0.1:7001'
+import baseURL from '../utils/baseURL'
 export default defineComponent({
     name:"Passage",
     setup(){

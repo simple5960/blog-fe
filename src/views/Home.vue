@@ -74,7 +74,7 @@ import {useRouter} from 'vue-router'
 import Classify from '../components/Classify.vue'
 import Passage from '../components/Passage.vue'
 import axios from 'axios'
-const baseURL='http://127.0.0.1:7001';
+import baseURL from '../utils/baseURL'
 export default defineComponent({
   name:"Home",
   components:{

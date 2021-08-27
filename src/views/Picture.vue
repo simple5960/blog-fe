@@ -51,7 +51,7 @@
 import {defineComponent, onMounted,ref } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import axios from 'axios'
-const baseURL=`http://127.0.0.1:7001`
+import baseURL from '../utils/baseURL'
 export default defineComponent({
     name:"picture",
     setup(){
